@@ -13,39 +13,95 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet">
+    <style>
+        .navbar{
+               color: white;
+            background-color: #101E42;
+            height: 100PX;
 
+           }
+           .logo{/*border:2px solid red;*/
+                display: inline-block;
+            position: absolute;
+            left: 70px;
+            top: auto;
+           }
+           .logopic{
+               height: 50%;
+               width: 50%;
+           }
+           .content{/*border: 2px solid green;*/
+            position: relative;
+            display: block;
+            width: 50%;
+            top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+           }
+           .options{
+            display: block;
+            margin-left: 70px;
+            color: white;
+
+           }
+           .options li{
+            
+               display: inline-block;
+               padding-right: 34px;
+               margin-left: auto;
+               font-size: 20px;
+           }
+           .options li a{
+            color: white;
+        text-decoration: none;
+
+           }
+           .options li a:hover{
+               text-decoration: underline;
+           }
+           
+            .profile{/*border: 2px solid pink;*/
+                display: inline-block;
+            position: absolute;
+            right: 90px;
+            top: 60px;
+            font-size: 20px;
+            }
+
+
+    </style>
     
     <title>A.G.A sign up page</title>
   </head>
   <body>
 
     <!-- 1.Navigation-->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo1.png" alt="logo" class="logopic">
+           
+               
+           
+        </div>
+        <div class="content">
+            <ul class="options">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Track</a></li>
+            <li><a href="#">Order Details</a></li>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#" style="font-family: Aguafina Script">A.G.A Courier Services</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
-        <a class="nav-link" href="indexAGA.html">Home </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="loginAGA.html">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="signup.html">Sign up</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
+            </ul>
+        </div>
+        <div class="profile">
 
-    </ul>
-    
-  </div>
-</nav>
+               My Profile
+        </div>
+    </header>
+
+  
 
   <!-- sign up-->
 
