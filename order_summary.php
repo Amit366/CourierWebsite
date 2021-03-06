@@ -102,9 +102,9 @@
     <div class="content">
         <ul class="options">
         <li><a href="indexAGA.html">Home</a></li>
-        <li><a href="indexAGA.html">About us</a></li>
-        <li><a href="#">Track</a></li>
-        <li><a href="#">Order Details</a></li>
+        <li><a href="indexAGA.html#foo">About us</a></li>
+        <li><a href="order_summary.php">Order Details</a></li>
+        <li><a href="#">Contact Us</a></li>
 
 
         </ul>
