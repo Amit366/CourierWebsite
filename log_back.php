@@ -6,6 +6,11 @@ $password = "";
 $dbname = "AGA_Courier";
 $email=$_POST['subscriber_email'];
 $espassword=$_POST['subscriber_password'];
+$subscriber_fname=$_POST['subscriber_fname'];
+$subscriber_lname=$_POST['subscriber_lname'];
+$subscriber_gender=$_POST['subscriber_gender'];
+$subscriber_city=$_POST['subscriber_city'];
+$subscriber_country=$_POST['subscriber_country'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -18,11 +23,12 @@ $sql="SELECT * FROM user_description WHERE subscriber_email='$email' && subscrib
 $result = $conn->query($sql);
 $num =mysqli_num_rows($result);
 if($num==1)
- {
-	
+ {  
+    $_SESSION['ema']=$email;
+    $_SESSION['pass']=$espassword;
 	echo "<script>
     alert('Login Successfully');
-    window.location.href='indexAGA.php';
+    window.location.href='indexAGA.html';
     </script>";
 
  }
@@ -30,7 +36,8 @@ else
  {
 	echo "<script>
     alert('Error');
-    window.location.href='loginAGA.php';
+    window.location.href='loginAGA.html';
     </script>";
  }
+ $conn->close();
 ?>
