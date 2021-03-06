@@ -23,8 +23,8 @@ VALUES ('$subscriber_fname','$subscriber_lname','$subscriber_email','$subscriber
 if ($conn->query($sql) === TRUE) {
 
 	echo "<script>
-    alert('Registered Successfuly');
-    window.location.href='loginAGA.php';
+    alert('Registered Successfully');
+    window.location.href='loginAGA.html';
     </script>";
   
  } 
@@ -32,5 +32,5 @@ else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-
+$conn->close();
 ?>
