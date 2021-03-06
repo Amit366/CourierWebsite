@@ -12,7 +12,6 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         .navbar{
                color: white;
@@ -62,14 +61,19 @@
                text-decoration: underline;
            }
            
-            .profile{/*border: 2px solid pink;*/
+            .profile a{/*border: 2px solid pink;*/
                 display: inline-block;
             position: absolute;
             right: 90px;
             top: 60px;
             font-size: 20px;
+            color: white;
+            
             }
-
+            .profile a:hover{
+              text-decoration: underline;
+            }
+            
 
     </style>
     <title>A.G.A login page</title>
@@ -88,8 +92,8 @@
     </div>
     <div class="content">
         <ul class="options">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
+        <li><a href="indexAGA.html">Home</a></li>
+        <li><a href="indexAGA.html">About us</a></li>
         <li><a href="#">Track</a></li>
         <li><a href="#">Order Details</a></li>
 
@@ -98,7 +102,7 @@
     </div>
     <div class="profile">
 
-           My Profile
+          <a href="myprofile.php">My Profile</a> 
     </div>
 </header>
 
@@ -107,6 +111,7 @@
   <section >
     <div id="login">
         <h3 class="text-center text-white pt-5">Login form</h3>
+       <article class="card-body"> 
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
@@ -133,6 +138,7 @@
                 </div>
             </div>
         </div>
+      </article>
     </div>
   </section>
 </form>
@@ -143,3 +149,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
+
