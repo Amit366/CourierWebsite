@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -123,6 +123,19 @@
 .container .btn:hover {
   background-color: black;
 }
+.profile a{/*border: 2px solid pink;*/
+                display: inline-block;
+            position: absolute;
+            right: 90px;
+            top: 60px;
+            font-size: 20px;
+            color: white;
+            
+            }
+            .profile a:hover{
+              text-decoration: underline;
+              
+            }
            
 
         </style>
@@ -137,9 +150,9 @@
             </div>
             <div class="content">
                 <ul class="options">
-                <li><a href="#">Home</a></li>
-                <li><a href="AGA.html#foo">About us</a></li>
-                <li><a href="#">Order Details</a></li>
+                <li><a href="indexAGA.html">Home</a></li>
+                <li><a href="indexAGA.html#foo">About us</a></li>
+                <li><a href="order_summary.php">Order Details</a></li>
                 <li><a href="#">Contact Us</a></li>
 
 
@@ -147,13 +160,13 @@
             </div>
             <div class="profile">
 
-                   My Profile
+              <a href="myprofile.php">My Profile</a> 
             </div>
         </header>
         <div class="container">
         <img src="aga3.jpg" class="bigpic"> 
                     <button class="btn">
-                        <a href="signupAGA.html" style="color: white; text-decoration: none;">Sign up</a></button>
+                        <a href="signup.html" style="color: white; text-decoration: none;">Sign up</a></button>
                    <button class="btn">
                     <a href="loginAGA.html" style="color: white; text-decoration: none;">Log in</a></button>
                    <button class="btn"><a href="ship.html" style="color: white; text-decoration: none;">Ship</a></button>
