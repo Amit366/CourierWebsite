@@ -27,7 +27,7 @@ if ($conn->query($sql) === TRUE) {
 
 	echo "<script>
     alert('Thank you');
-    window.location.href='ship.html';
+    window.location.href='order_summary.php';
     </script>";
   
  } 
