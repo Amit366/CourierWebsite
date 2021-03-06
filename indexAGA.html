@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,19 +12,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="AGA.css">
 
+       
         <style>
-
+           
            body{
                 margin: 0;
-                padding: 0;  
+                padding: 0;            
 
-                 } 
+
+           } 
            .navbar{
                color: white;
             background-color: #101E42;
-            height: 100PX;
+            height: 100px;
+            
 
-             }
+           }
            .logo{/*border:2px solid red;*/
                 display: inline-block;
             position: absolute;
@@ -38,14 +45,18 @@
             top: 50px;
             margin-left: auto;
             margin-right: auto;
-             }
+            
+
+           }
            .options{
             display: block;
             margin-left: 70px;
             color: white;
-            }
+
+           }
            .options li{
-            display: inline-block;
+            
+               display: inline-block;
                padding-right: 34px;
                margin-left: auto;
                font-size: 20px;
@@ -53,22 +64,18 @@
            .options li a{
             color: white;
         text-decoration: none;
-        }
+
+           }
            .options li a:hover{
                text-decoration: underline;
            }
-
-            .profile a{/*border: 2px solid pink;*/
+           
+            .profile{/*border: 2px solid pink;*/
                 display: inline-block;
             position: absolute;
             right: 90px;
             top: 60px;
             font-size: 20px;
-            color: white;
-            
-            }
-            .profile a:hover{
-              text-decoration: underline;
             }
            .bigpic
            {    display: block;
@@ -85,12 +92,22 @@
                 width: 100%;
                 height: auto;
                 }
+        #foo{
+            margin-left: 80px;
 
-            .container .btn {
+                }
+     footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #101E42;
+  color: white;
+            }
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
   position: relative;
   display: inline-block;
   top: 50%;
-  left: 40%;
+  left: 37%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #555;
@@ -106,58 +123,62 @@
 .container .btn:hover {
   background-color: black;
 }
-          .profile a{/*border: 2px solid pink;*/
-                display: inline-block;
-            position: absolute;
-            right: 90px;
-            top: 60px;
-            font-size: 20px;
-            color: white;
-            text-decoration: none;
-            
-            }
-            .profile a:hover{
-              text-decoration: underline;
-            }
-
+           
 
         </style>
-  </head>
+    </head>
     <body>
         <header class="navbar">
             <div class="logo">
                 <img src="logo1.png" alt="logo" class="logopic">
-                </div>
+               
+                   
+               
+            </div>
             <div class="content">
                 <ul class="options">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Track</a></li>
-                <li><a href="order_summary.php">Order Details</a></li>
+                <li><a href="AGA.html#foo">About us</a></li>
+                <li><a href="#">Order Details</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+
                 </ul>
             </div>
             <div class="profile">
 
-              <a href="myprofile.php">My Profile</a> 
+                   My Profile
             </div>
         </header>
         <div class="container">
         <img src="aga3.jpg" class="bigpic"> 
                     <button class="btn">
-                        <a href="signup.html" style="color: white; text-decoration: none;">Sign up</a></button>
+                        <a href="signupAGA.html" style="color: white; text-decoration: none;">Sign up</a></button>
                    <button class="btn">
                     <a href="loginAGA.html" style="color: white; text-decoration: none;">Log in</a></button>
                    <button class="btn"><a href="ship.html" style="color: white; text-decoration: none;">Ship</a></button>
-
+   
         </div>
-
-        Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Sit, tempore.<br> Natus dolore sunt, minima nam magnam,<br>
+        <br><br><br>
+       <div id="foo"><h3>About Us</h3>
+        <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, tempore.<br> Natus dolore sunt, minima nam magnam,
          beatae excepturi saepe,<br> soluta fuga assumenda dicta! Nam vel fuga animi error? <br>Dolor, sequi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Lorem ipsum dolor sit <br> consectetur adipisicing elit.<br>
          Deserunt sequi optio quidem adipisci expedita. Odit assumenda, <br>
-         reiciendis cum perspiciatis harum nulla beatae molestias, repellendus inventore tempore excepturi. <br>
-        Ab, assumenda nihil.
+         reiciendis cum perspiciatis harum nulla beatae molestias, <br>repellendus inventore tempore excepturi.
+        Ab, assumenda nihil.<br>
+        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Vel ut quam illum quod veniam, <br>libero ab labore distinctio
+        <br>esse nemo soluta fuga reprehenderit.
+        <br> Reiciendis est molestiae dignissimos<br> error adipisci optio?</p></div>
         <!-- <script src="" async defer></script> -->
+
+        <footer>
+            <p style="font-size: 22px;">A.G.A Courier Services<br>
+            </p>
+          </footer>
+        
+
+
     </body>
 </html>
-
