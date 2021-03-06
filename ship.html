@@ -37,7 +37,7 @@
             top: 30px;
             margin-left: auto;
             margin-right: auto;
-            
+
 
            }
            .options{
@@ -47,7 +47,7 @@
 
            }
            .options li{
-            
+
                display: inline-block;
                padding-right: 34px;
                margin-left: auto;
@@ -61,7 +61,7 @@
            .options li a:hover{
                text-decoration: underline;
            }
-           
+
             .profile{/*border: 2px solid pink;*/
                 display: inline-block;
             position: absolute;
@@ -72,7 +72,7 @@
 
 
     </style>
-    
+
     <title>Place order</title>
   </head>
   <body>
@@ -81,16 +81,16 @@
     <header class="navbar">
         <div class="logo">
             <img src="logo1.png" alt="logo" class="logopic">
-           
-               
-           
+
+
+
         </div>
         <div class="content">
             <ul class="options">
-            <li><a href="#">Home</a></li>
+            <li><a href="indexAGA.html">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Track</a></li>
-            <li><a href="#">Order Details</a></li>
+            <li><a href="order_summary.php">Order Details</a></li>
 
 
             </ul>
@@ -101,7 +101,7 @@
         </div>
     </header>
 
-  
+
 
   <!-- sign up-->
 
@@ -130,25 +130,29 @@
 
 
 <article class="card-body">
-<form action="" method="POST">
+<form action="Ship_back.php" method="POST">
   <div class="form-row">
     <div class="col form-group">
-      <label for="subscriber_fname">First name </label>   
-        <input type="text" name="subscriber_fname" class="form-control" placeholder="First name" required>
+      <label for="first_name">First name </label>   
+        <input type="text" name="first_name" class="form-control" placeholder="First name" required>
     </div> <!-- form-group end.// -->
     <div class="col form-group">
-      <label for="subscriber_lname">Last name</label>
-        <input type="text" name="subscriber_lname" class="form-control" placeholder="Last name">
+      <label for="last_name">Last name</label>
+        <input type="text" name="last_name" class="form-control" placeholder="Last name">
     </div> <!-- form-group end.// -->
   </div> <!-- form-row end.// -->
 
 
   <div class="form-group">
-    <label for="subscriber_email">Contact</label>
-    <input type="tel" name ="subscriber_email" class="form-control" placeholder="Phone number" required>
+    <label for="contact">Contact</label>
+    <input type="tel" name ="contact" class="form-control" placeholder="Phone number" required>
     <!--<small class="form-text text-muted">We'll never share your email with anyone else.</small>-->
   </div> <!-- form-group end.// -->
-
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="tel" name ="email" class="form-control" placeholder="Email" required>
+    <!--<small class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+  </div> 
   <!--<div class="form-group">
       <label for="subscriber_gender" class="form-check form-check-inline">
       <input class="form-check-input" type="radio" name="subscriber_gender" value="option1">
@@ -162,9 +166,9 @@
   <!-- form-group end.// -->
 
   <div class="form-group">
-    <label for="subscriber_email">Address</label>
-    <input type="text" name ="subscriber_email" class="form-control" placeholder="Address line 1" required><br>
-    <input type="text" name ="subscriber_email" class="form-control" placeholder="Address line 2" required>
+    <label for="address">Address</label>
+    <input type="text" name ="address" class="form-control" placeholder="Address line 1" required><br>
+    <input type="text" name ="address_1" class="form-control" placeholder="Address line 2" required>
     <!--<small class="form-text text-muted">We'll never share your email with anyone else.</small>-->
   </div>
 
@@ -174,19 +178,19 @@
 
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="subscriber_city">City</label>
-      <input type="text" name="subscriber_city" placeholder="City" class="form-control" required>
+      <label for="city">City</label>
+      <input type="text" name="city" placeholder="City" class="form-control" required>
     </div> <!-- form-group end.// -->
 
     <div class="form-group col-md-6">
-        <label for="subscriber_city">PIN</label>
-        <input type="number" name="subscriber_city" placeholder="PIN" class="form-control" required>
+        <label for="pin">PIN</label>
+        <input type="number" name="pin" placeholder="PIN" class="form-control" required>
       </div>
 
 
     <div class="form-group col-md-6">
-      <label for="subscriber_country">Country</label>
-      <select id="inputState" name="subscriber_country" class="form-control">
+      <label for="country">Country</label>
+      <select id="inputState" name="country" class="form-control">
         <option> Choose...</option>
           <option>Uzbekistan</option>
           <option>Russia</option>
@@ -197,8 +201,8 @@
     </div> <!-- form-group end.// -->
   </div> <!-- form-row.// -->
   <div class="form-group">
-    <label for="subscriber_password">Package weight(in grams):</label>
-      <input class="form-control" name="subscriber_password" type="number" required>
+    <label for="package_weight">Package weight(in grams):</label>
+      <input class="form-control" name="package_weight" type="number" required>
   </div> <!-- form-group end.// -->  
     <div class="form-group">
         <button type="submit" class="btn btn-primary btn-block"> Submit  </button>
@@ -223,4 +227,4 @@
 
 </div>
 <br><br>
-</article>
+</article> 
