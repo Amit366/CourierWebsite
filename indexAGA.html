@@ -11,14 +11,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="AGA.css">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
        
         <style>
+
            
            body{
                 margin: 0;
                 padding: 0;            
-
+                font-family: 'Ubuntu', sans-serif;
 
            } 
            .navbar{
@@ -92,10 +94,7 @@
                 width: 100%;
                 height: auto;
                 }
-        #foo{
-            margin-left: 80px;
-
-                }
+        
      footer {
   text-align: center;
   padding: 3px;
@@ -118,12 +117,60 @@
   cursor: pointer;
   border-radius: 5px;
   margin: 9px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .container .btn:hover {
   background-color: black;
 }
-           
+    /*#foo{
+            margin-left: 80px;
+
+                }*/
+ .flex{ 
+        height: 600px;
+        width: 90%;
+        border:2px ;
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+        margin-left: 5%;
+ }
+ .flex1{
+    background-color:#a0d2eb;
+    border-radius: 0.2cm;
+    margin: 20px;
+    padding: 25px;
+    display: inline-block;
+    justify-content: center;
+
+ }
+ #about{
+     flex-grow: 2;
+     
+     flex-basis: 60rem;
+ }
+ #team{
+    flex-grow: 3;
+   
+    flex-basis: 40rem;
+
+
+ }
+
+ .us{
+    display: flex;
+     
+
+ }
+ #name{
+     flex-basis: 40rem;
+ }
+#pic{
+    flex-basis: 40rem;
+}
+
+
 
         </style>
     </head>
@@ -160,21 +207,43 @@
    
         </div>
         <br><br><br>
-       <div id="foo"><h3>About Us</h3>
-        <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, tempore.<br> Natus dolore sunt, minima nam magnam,
-         beatae excepturi saepe,<br> soluta fuga assumenda dicta! Nam vel fuga animi error? <br>Dolor, sequi?
-        Lorem ipsum dolor sit <br> consectetur adipisicing elit.<br>
-         Deserunt sequi optio quidem adipisci expedita. Odit assumenda, <br>
-         reiciendis cum perspiciatis harum nulla beatae molestias, <br>repellendus inventore tempore excepturi.
-        Ab, assumenda nihil.<br>
-        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Vel ut quam illum quod veniam, <br>libero ab labore distinctio
-        <br>esse nemo soluta fuga reprehenderit.
-        <br> Reiciendis est molestiae dignissimos<br> error adipisci optio?</p></div>
-        <!-- <script src="" async defer></script> -->
+       <div class="flex" id="foo" >
+          <div class="flex1" id="about"> <h2>About Us</h2>
+            <p>
+            Ever wondered how convenient it would have been if you could send across priceless treasures to your loved ones from the comforts of your home!
+
+            We are pleased to introduce you to A.G.A Courier Services - India's leading online courier booking portal which is conceptualized in providing express courier delivery just at the click of a button!!!
+            
+            Seems like a dream come true right!
+            
+            We render our expertise in imparting Rapid, Cost effective, Reliable and Time-definite delivery of parcels across different locations all over India.
+            
+            At A.G.A Courier Services we strive to achieve the highest level of Customer Satisfaction possible. 
+            Our cutting edge technologies, highly reliable logistics and state of the art customer service enables us to provide the fastest and 
+            the most reliable door to door transit times in the industry.</p>
+           </div>
+           <div class="flex1" id="team">
+            <h2>The Team</h2>
+            <div class="us">
+                <div id="name"><br><br> <a style="font-size: larger;"><b>A</b></a>nkan Nayak<br>B319006<br><br>
+                    <br><br><br><br><br><a style="font-size: larger;"><b>G</b></a>.Maheswar<br>B319020<BR>
+                    <br><br><br><br><br><br><a style="font-size: larger;"><b>A</b></a>mit Kumar Misra<br>B319005</div>
+                <div id="pic"><img src="myPIC.jpeg" height="120px" width="120px" > <br> <br>
+                    <img src="maheswar.jpeg" height="120px" width="120px"><br><br> <img src="amit.jpeg" height="120px" width="120px"> </div>
+
+            </div>
+
+
+
+
+           </div>
+        </div>
+        
+            <!-- <script src="" async defer></script> -->
 
         <footer>
-            <p style="font-size: 22px;">A.G.A Courier Services<br>
+            <p style="font-size: 22px;">A.G.A Courier Services
+               <div style="font-size: 18px;"> A 4th sem Project</div>
             </p>
           </footer>
         
