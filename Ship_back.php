@@ -23,6 +23,13 @@ if ($conn->connect_error) {
 
 $sql = "INSERT INTO ship_details (first_name,last_name,contact, email, address, address_1, city, pin, country, package_weight)
 VALUES ('$first_name','$last_name','$contact','$email','$address','$address_1','$city','$pin','$country','$package_weight')";
+
+if($package_weight<0){
+	echo "<script>
+    alert('Error! package_weight is negative');
+    window.location.href='ship.html';
+    </script>";
+}
 if ($conn->query($sql) === TRUE) {
 
 	echo "<script>
@@ -37,4 +44,3 @@ else {
 
 $conn->close();
 ?>
-
