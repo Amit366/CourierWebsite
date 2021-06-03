@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AGA Courier Services</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="AGA.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+       
+        <style>
+           
+           body{
+                margin: 0;
+                padding: 0;            
+                font-family: 'Ubuntu', sans-serif;
+
+           } 
+           .navbar{
+               color: white;
+            background-color: #101E42;
+            height: 100px;
+            
+
+           }
+           .logo{/*border:2px solid red;*/
+                display: inline-block;
+            position: absolute;
+            left: 70px;
+            top: auto;
+           }
+           .logopic{
+               height: 50%;
+               width: 50%;
+           }
+           .content{/*border: 2px solid green;*/
+            position: relative;
+            display: block;
+            width: 50%;
+            top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+           }
+           .options{
+            display: block;
+            margin-left: 70px;
+            color: white;
+
+           }
+           .options li{
+            
+               display: inline-block;
+               padding-right: 34px;
+               margin-left: auto;
+               font-size: 20px;
+           }
+           .options li a{
+            color: white;
+        text-decoration: none;
+
+           }
+           .options li a:hover{
+               text-decoration: underline;
+           }
+           
+           
+           .bigpic
+           {    display: block;
+               margin-top: 20px;
+               padding: 0px;
+                width:100% ;
+                height:30%;
+                margin-left: auto;
+                margin-right: auto;
+                filter: blur(3px);
+           }
+
+           .container img {
+                width: 100%;
+                height: auto;
+                }
+        
+     footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #101E42;
+  color: white;
+            }
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 25px;
+  padding: 30px 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 9px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+.flex{ 
+        height: 600px;
+        width: 90%;
+        border:2px ;
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+        margin-left: 5%;
+ }
+ .flex1{
+    background-color:#a0d2eb;
+    border-radius: 0.2cm;
+    margin: 20px;
+    padding: 25px;
+    display: inline-block;
+    justify-content: center;
+
+ }
+ #about{
+     flex-grow: 2;
+
+     flex-basis: 60rem;
+ }
+ #team{
+    flex-grow: 3;
+
+    flex-basis: 40rem;
+
+
+ }
+
+ .us{
+    display: flex;
+
+
+ }
+ #name{
+     flex-basis: 40rem;
+ }
+#pic{
+    flex-basis: 40rem;
+}
+.profile a{/*border: 2px solid pink;*/
+             
+       display: inline-block;
+        position: absolute;
+        right: 90px;
+        top: 60px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        }
+.profile a:hover{
+    text-decoration: underline;
+              
+}
+           
+
+        </style>
+    </head>
+    <body>
+    <?php
+        <header class="navbar">
+            <div class="logo">
+                <img src="logo1.png" alt="logo" class="logopic">
+               
+                   
+               
+            </div>
+            <div class="content">
+                <ul class="options">
+                <li><a href="indexAGA.html">Home</a></li>
+                <li><a href="indexAGA.html#foo">About us</a></li>
+                <li><a href="order_summary.php">Order Details</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+
+                </ul>
+            </div>
+            <div class="profile">
+
+              <a href="myprofile.php">My Profile</a> 
+            </div>
+        </header>
+        <div class="container">
+        <img src="aga3.jpg" class="bigpic"> 
+                    <button class="btn">
+                        <a href="signup.html" style="color: white; text-decoration: none;">Sign up</a></button>
+                   <button class="btn">
+                    <a href="loginAGA.html" style="color: white; text-decoration: none;">Log in</a></button>
+                   <button class="btn"><a href="ship.html" style="color: white; text-decoration: none;">Ship</a></button>
+   
+        </div>
+        <br><br><br>
+       <div class="flex" id="foo" >
+          <div class="flex1" id="about"> <h2>About Us</h2>
+            <p>
+            Ever wondered how convenient it would have been if you could send across priceless treasures to your loved ones from the comforts of your home!
+
+            We are pleased to introduce you to A.G.A Courier Services - India's leading online courier booking portal which is conceptualized in providing express courier delivery just at the click of a button!!!
+
+            Seems like a dream come true right!
+
+            We render our expertise in imparting Rapid, Cost effective, Reliable and Time-definite delivery of parcels across different locations all over India.
+
+            At A.G.A Courier Services we strive to achieve the highest level of Customer Satisfaction possible. 
+            Our cutting edge technologies, highly reliable logistics and state of the art customer service enables us to provide the fastest and 
+            the most reliable door to door transit times in the industry.</p>
+           </div>
+           <div class="flex1" id="team">
+            <h2>The Team</h2>
+            <div class="us">
+                <div id="name"><br><br> <a style="font-size: larger;"><b>A</b></a>nkan Nayak<br>B319006<br><br>
+                    <br><br><br><br><br><a style="font-size: larger;"><b>G</b></a>.Maheswar<br>B319020<BR>
+                    <br><br><br><br><br><br><a style="font-size: larger;"><b>A</b></a>mit Kumar Misra<br>B319005</div>
+                <div id="pic"><img src="Ankan_pic.jpeg" height="120px" width="120px" > <br> <br>
+                    <img src="Mahesh_pic.jpg" height="120px" width="120px"><br><br> <img src="Amit_pic.jpg" height="120px" width="120px"> </div>
+
+            </div>
+
+
+
+
+           </div>
+        </div>
+
+            <!-- <script src="" async defer></script> -->
+
+        <footer>
+            <p style="font-size: 22px;">A.G.A Courier Services
+               <div style="font-size: 18px;"> A 4th sem Project</div>
+            </p>
+          </footer>
+        
+
+     ?>
+    </body>
+</html>
+
