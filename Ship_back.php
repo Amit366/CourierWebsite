@@ -1,8 +1,8 @@
 <?php
-$servername = "sql204.epizy.com";
-$username = "epiz_28784356";
-$password = "voeq88MJWa";
-$dbname = "epiz_28784356_courierwebservice";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "aga_courier";
 $email = $_POST['email'];
 $pin = $_POST['pin'];
 $first_name=$_POST['first_name'];

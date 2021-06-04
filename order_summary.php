@@ -117,10 +117,10 @@
 
 <?php
 session_start();
-$servername = "sql204.epizy.com";
-$username = "epiz_28784356";
-$password = "voeq88MJWa";
-$dbname = "epiz_28784356_courierwebservice";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "aga_courier";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

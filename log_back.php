@@ -1,9 +1,9 @@
 <?php
 session_start();
-$servername = "sql204.epizy.com";
-$username = "epiz_28784356";
-$password = "voeq88MJWa";
-$dbname = "epiz_28784356_courierwebservice";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "aga_courier";
 $email=$_POST['subscriber_email'];
 $espassword=$_POST['subscriber_password'];
 $subscriber_fname=$_POST['subscriber_fname'];
