@@ -85,7 +85,7 @@
 
 
     </style>
-    <title>A.G.A login page</title>
+    <title>Order Details</title>
   </head>
   <body>
 

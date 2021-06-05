@@ -30,17 +30,25 @@ if($package_weight<0){
     window.location.href='ship.html';
     </script>";
 }
-if ($conn->query($sql) === TRUE) {
 
-	echo "<script>
-    alert('Thank you');
-    window.location.href='order_summary.php';
-    </script>";
-  
- } 
-else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+$sql = "SELECT * FROM ship_details WHERE email = '".$_SESSION['ema']."'";
+$result = mysqli_query($conn, $sql);
+$resultCheck = mysqli_num_rows($result);
+
+if($resultCheck > 0){
+  echo "<script>
+  alert('Thank you');
+  window.location.href='order_summary.php';
+  </script>";
 }
+ 
+else {
+    echo "<script>
+      alert('Email is not registered');
+      window.location.href='ship.html';
+      </script>";
+}
+
 
 $conn->close();
 ?>

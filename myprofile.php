@@ -84,7 +84,7 @@
 
 
     </style>
-    <title>A.G.A login page</title>
+    <title>My Profile</title>
   </head>
   <body>
 
